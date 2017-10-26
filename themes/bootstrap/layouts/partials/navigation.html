@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="/">
+        <img src="/images/profile/logo.png" />
+        <span>{{ .Site.Params.profile.name }}</span>
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav">
+            <li class="nav-item sidebar-profile text-center">
+                <div class="profile-pic">
+                    <img src="{{ .Site.Params.profile.avatar }}" alt="avatar">
+                </div>
+                <div class="profile-detail">
+                    {{ range .Site.Params.profile.tags }}
+                    <span>{{ . }}</span> {{ end }}
+                </div>
+            </li>
+            {{range $list, $element := .Site.Params.menu }}
+            <li class="nav-item sidebar-menu" data-toggle="tooltip" data-placement="right" title="{{$element.name}}">
+                <a class="nav-link" href="{{ $element.url }}">
+                <i class="fa fa-fw {{ $element.icon }}"></i>
+                <span class="nav-link-text">{{$element.name}}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+        <ul class="navbar-nav sidenav-social">
+            {{range $list, $element := .Site.Params.social }}
+            <li><a href="{{ $element.url }}" target="_blank"><i class="{{ $element.icon }}"></i></a></li>
+            {{ end }}
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+            <li class="nav-item">
+                <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+            </a>
+            </li>
+        </ul>
+        <!-- <ul class="navbar-nav sidenav-social ml-auto">
+            {{range $list, $element := .Site.Params.social }}
+            <li class="nav-item"><a class="nav-link" href="{{ $element.url }}" target="_blank"><i class="{{ $element.icon }}"></i></a></li>
+            {{ end }}
+        </ul> -->
+        <!-- <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-fw fa-sign-out"></i>Logout
+                </a>
+            </li>
+        </ul> -->
+    </div>
+</nav>

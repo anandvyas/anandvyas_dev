@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Anand vyas - Resume 2017</title>
+    <!-- Bootstrap core CSS-->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="/css/resume.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', serif;
+            font-size: 14px;
+            border: 1px solid black;
+        }
+        #resume{
+            max-width: 740px;
+        }
+        .header .fname {
+            font-weight: 100;
+            font-style: normal;
+            color: gray;
+            font-size: 28pt;
+            margin-right: 8px;
+        }
+
+        .header .lname {
+            font-size: 28pt;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .header .designation {
+            margin-top: -10px;
+        }
+
+        .header .designation span {
+            color: red;
+            font-size: 8pt;
+            margin-right: 10px;
+            font-weight: 400;
+        }
+
+        .header .address {
+            color: gray;
+            font-size: 8pt;
+        }
+
+        .header .social span {
+            font-size: 12px;
+            border-right: 1px solid #000000;
+            padding: 0 10px;
+        }
+
+        .header .social span a {
+            color: black
+        }
+
+        .header .social span a:hover {
+            text-decoration: none;
+        }
+
+        .header .social span:last-child {
+            border-right: none
+        }
+
+        .header .quotes {
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+            margin: 20px 0;
+        }
+
+        .block {
+            border-top: 1px solid black;
+            margin-top: 40px;
+            page-break-after: always;
+        }
+
+        .block-heading {
+            padding-right: 5px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: -22px;
+            background-color: white;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+        }
+
+        .block-heading span {
+            font-weight: 400;
+            color: red;
+        }
+
+        .block-body {
+            padding: 5px;
+        }
+
+        .summary {
+            text-align: justify;
+        }
+
+        .company {
+            font-weight: 600;
+        }
+
+        .company-address {
+            font-weight: 100;
+            color: red;
+            font-style: italic;
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+        .company-designation {
+            color: gray;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        .company-duration {
+            color: gray;
+            font-style: italic;
+            text-align: right;
+        }
+        .work-expression, .project{
+            border: 1px solid #E8E3E3;
+            margin-top: 5px;
+            padding: 10px;
+        }
+    </style>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jspdf.min.js"></script>
+    <script src="/js/html2canvas.js"></script>
+</head>
+
+<body>
+    <div id="resume" class="container">
+        <div id="resume" class="header">
+            <div class="row text-center">
+                <div class="col-lg-12 ">
+                    <span class="fname">{{ .Site.Params.profile.fname }}</span>
+                    <span class="lname">{{ .Site.Params.profile.lname }}</span>
+                </div>
+            </div>
+            <div class="row text-center designation">
+                <div class="col-lg-12">
+                    {{ range .Site.Params.profile.tags }}
+                    <span>{{ . }}</span> {{ end }}
+                </div>
+            </div>
+            <div class="row text-center address">
+                <div class="col-lg-12">{{ .Site.Params.profile.address }}</div>
+            </div>
+            <div class="row text-center social">
+                <div class="col-lg-12">
+                    {{ range .Site.Params.social }}
+                    {{ if eq .inresume "true" }}
+                    <span>
+                        <i class="{{.icon}}"></i>
+                        <a href="{{ .url }}" target="blank">{{.username}}</a>
+                    </span> 
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="row text-center quotes">
+                <div class="col-lg-12">I believe there is no such thing as failure, it's a result we get by our belief and actions. Let's continuously steer our path until we get a result we want, called as "Success".</div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-heading"><span>Sum</span>mary</div>
+            <div class="row block-body summary">
+                <div class="col-lg-12">
+                    {{ .Site.Params.profile.description | safeHTML }}
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-heading"><span>Wor</span>k Expression</div>
+            {{ range .Site.Params.workexpression }}
+            <div class="block-body work-expression">
+                <div class="row">
+                    <div class="col-lg-6 company">{{ .company_name}}</div>
+                    <div class="col-lg-6 company-address">{{ .company_address}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 company-designation">{{ .company_designation}}</div>
+                    <div class="col-lg-6 company-duration">{{ .company_duration}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 company-role">
+                        <ul>
+                            {{ range .company_roles }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="block">
+            <div class="block-heading"><span>Cer</span>tification</div>
+            <div class="row text-center">
+                <ul class="certification">
+                    {{ range .Site.Params.certificaiton }}
+                    <li>
+                        <i class="{{.icon}}"></i>
+                        <a href="{{ .url }}" target="blank">{{.username}}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-heading">Language</div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="summary-data">{{ .Site.Params.profile.name | safeHTML }}</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="summary-data">{{ .Site.Params.profile.name | safeHTML }}</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="summary-data">{{ .Site.Params.profile.name | safeHTML }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-heading">Projects</div>
+            {{ range .Site.Params.projects }}
+            <div class="project">
+                <div class="row">
+                    <div class="col-lg-6">{{ .project }} </div>
+                    <div class="col-lg-6">{{ .duration }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">{{ .description | safeHTML }} </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">{{ .client | safeHTML }} </div>
+                    <div class="col-lg-6">{{ .role }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">{{ .technologies }} </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <script>
+        var pdf = new jsPDF('p', 'pt', 'letter');
+        pdf.addFont('FontAwesome', 'FontAwesome', 'normal');
+        pdf.setFont('FontAwesome');
+        pdf.setProperties({
+            title: 'Anand vyas - Resume (2017)',
+            subject: 'Resume',
+            author: 'Anand vyas',
+            keywords: 'AWS Solution Architect, Cloud Architect, Application Architect,',
+            creator: 'Anand vyas'
+        });
+
+        // html2canvas($("#resume"), {
+        //     onrendered: function(canvas) {         
+        //         var imgData = canvas.toDataURL('image/png');              
+        //         var doc = new jsPDF('p', 'mm');
+        //         doc.addImage(imgData, 'PNG', 10, 10);
+        //         doc.save('sample-file.pdf');
+        //     }
+        // });
+        
+        // var quotes = document.getElementById('resume');
+        
+        // window.onePageCanvas = document.createElement("canvas");
+        // onePageCanvas.setAttribute('width', 900);
+        // onePageCanvas.setAttribute('height', 980);
+
+        // var ctx = onePageCanvas.getContext('2d');
+        // ctx.drawImage(srcImg, sX, sY, sWidth, sHeight, dX, dY, dWidth, dHeight);
+
+
+        // pdf.save('Anand vyas - Resume 2017.pdf');
+    </script>
+</body>
+</html>

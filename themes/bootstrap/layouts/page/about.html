@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "header.html" . }}
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation Start-->
+    {{ partial "navigation.html" . }}
+    <!-- Navigation End-->
+    <div class="content-wrapper">
+        <div class="container-about">
+            <div class="row banner">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <div id="photo-header" class="text-center">
+                        <div id="photo">
+                            <img src="{{ .Site.Params.profile.avatar }}" alt="avatar">
+                        </div>
+                        <div id="text-header">
+                            <h1>{{ .Site.Params.profile.name }}</h1>
+                            {{ range .Site.Params.profile.tags }}
+                            <span>{{ . }}</span> {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-7">
+                    <div class="box" style="text-align:justify">
+                        <h2>About Me</h2>
+                        <p>{{ .Site.Params.profile.description | safeHTML }}</p>
+                        <p><b>Download my full CV</b>: 
+                            <a href="/files/anandvyas-resume-2017.pdf"><span class="fa fa-file fa-fw"></span></a>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h2>Work Experience</h2>
+                        {{ range .Site.Params.workexpression }}
+                        <div class="row job clearfix">
+                            <div class="col-lg-3">
+                                <div class="where">{{ .company_name}}</div>
+                                <div class="location">{{ .company_address}}</div>
+                                <div class="year">{{ .company_duration}}</div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="profession">{{ .company_designation}}</div>
+                                <div class="department">Achievements/Tasks</div>
+                                <div class="description">
+                                    <ul>
+                                    {{ range .company_roles }}
+                                        <li>{{ . }}</li>
+                                    {{ end }}   
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <div class="box">
+                        <h2>Education</h2>
+                        <ul id="education" class="clearfix">
+                            <li>
+                                <div class="year pull-left">2006</div>
+                                <div class="description pull-right">
+                                    <h3>Master in Computer Application (M.C.A)</h3>
+                                    <p>Affiliated from <a href="https://www.uniraj.ac.in/">Rajasthan university</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <h2>Projects</h2>
+                        {{ range .Site.Params.projects }}
+                        <div class="row project clearfix">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="project-heading label">{{ .project }}</div>
+                                    <div class="project-duration">{{ .duration }}</div>
+                                </div>
+                                <div class="row">
+                                        <div class="project-description">{{ .description | safeHTML }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <span class="label">Client:</span>
+                                        <div class="project-client">{{ .client  | safeHTML }}</div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <span class="label">Role:</span>
+                                        <div class="project-role">{{ .role }}</div>    
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="label">Technologies:</span>
+                                        <div class="project-technologies">{{ .technologies }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+                    <div class="box contact">
+                        <h2>Contact</h2>
+                        {{ range .Site.Params.social }}
+                        <div class="contact-item">
+                            <div class="icon pull-left text-center"><span class="fa {{ .icon }} fa-fw"></span></div>
+                            <div class="title pull-right">{{ .name }}</div>
+                            <div class="description pull-right">
+                                <a href="{{ .url }}">{{ .displayname }}</a>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+
+                    <div class="box certificaiton">
+                        <h2>Certification</h2>
+                        {{ range .Site.Params.certificaiton }}
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <img class="img-fluid" src="{{ .image }}" alt="{{ .name }}">
+                            </div>
+                            <div class="col-lg-9 detail">
+                                  <div class="title">{{ .name }}</div>
+                                  <div class="license">{{ .license }}</div>
+                                  <div class="valid">{{ .valid }}</div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                {{ range .Site.Params.certificaiton }}
+                                <div class="carousel-item active">
+                                    <img class="img-fluid" src="{{ .image }}" alt="{{ .name }}">
+                                    <div class="carousel-caption">
+                                        <p>{{ .name }} ({{ .license }})</p>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                            <a class="left carousel-control" href="#carouselExampleControls" data-slide="prev">‹</a>
+                            <a class="right carousel-control" href="#carouselExampleControls" data-slide="next">›</a>
+                        </div> -->
+                    </div>
+
+                    <div class="box">
+                        <h2>Skills</h2>
+                        <div class="skills">
+                            {{ range .Site.Params.skills }}
+                            <div class="item-skills" data-percent="{{ .percentage }}">{{ .name }}</div>
+                            {{ end }}
+                            <div class="skills-legend clearfix">
+                                <div class="legend-left legend">Beginner</div>
+                                <div class="legend-left legend"><span>Proficient</span></div>
+                                <div class="legend-right legend"><span>Expert</span></div>
+                                <div class="legend-right legend">Master</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h2>Languages</h2>
+                        <div id="language-skills">
+                            {{ range .Site.Params.languages }}
+                            <div class="skill"> {{ .name }}
+                                <div class="icons pull-right">
+                                    <div style="width: {{ .percentage }}%;" class="icons-red"></div>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h2>Hobbies</h2>
+                        {{ range $val := .Site.Params.profile.hobbies }}
+                        <div class="hobby">{{ $val }}</div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container-fluid-->
+        <!-- /.content-wrapper-->
+        {{ partial "footer.html" . }}
+    </div>
+</body>
+
+</html>

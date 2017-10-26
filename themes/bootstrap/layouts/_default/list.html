@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "header.html" . }}
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation Start-->
+  {{ partial "navigation.html" . }}
+  <!-- Navigation End-->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+    {{ .Content }}
+    <ul class="posts">
+        {{ range .Data.Pages }}
+          <li>
+            <span>
+              <a href="{{ .Permalink }}">{{ .Title }}</a> 
+              <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+              </span>
+          </li>
+        {{ end }}
+    </ul>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>

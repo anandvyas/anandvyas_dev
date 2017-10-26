@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "header.html" . }}
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation Start-->
+  {{ partial "navigation.html" . }}
+  <!-- Navigation End-->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+        {{ .Content }}
+    <ul class="posts">
+        {{ range .Data.Pages }}
+        <div style="color:grey;">{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+        <div style="color:grey;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+        <div style="color:grey;">{{ if .Params.moods }}<strong>Moods:</strong> {{range .Params.moods}}<a href="{{ "/moods/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+
+        <li><span><a href="{{ .Permalink }}">{{ .Title }}</a> <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span></li>
+        {{ end }}
+    </ul>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>

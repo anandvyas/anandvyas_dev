@@ -1,0 +1,263 @@
+{
+    "baseURL":"http://anandvyas.in/",
+    "languageCode":"en-us",
+    "taxonomies":{
+        "tag":"tags",
+        "category":"categories",
+        "mood":"moods"
+    },
+    "publishDir": "docs",
+    "paginate": 10,
+    "title":"Anand vyas",
+    "PublishDir": "docs",
+    "params": {
+        "themeColor": "theme",
+        "description": "Technical Architect/ Team Lead",
+        "menu": [
+            { "name": "Home","url": "/", "icon":"fa fa-home" },
+            { "name": "About","url": "/about", "icon":"fa fa-user-circle" },
+            { "name": "AWS","url": "/aws", "icon":"fa fa-dashboard" },
+            { "name": "Categories","url": "/categories", "icon":"fa fa-dashboard" },
+            { "name": "Tags","url": "/tags", "icon":"fa fa-tags" }
+        ],
+        "social": [
+            { "name": "Mobile","icon":"fa fa-mobile","url": "#","displayname":"+91 9660100100","username":"+91 9660100100","inresume":"true" },
+            { "name": "Email","icon":"fa fa-envelope","url": "mailto:anandvyas@live.com","displayname":"anandvyas@live.com","username":"anandvyas@live.com","inresume":"true" },
+            { "name": "Twitter","icon":"fa fa-twitter","url": "https://twitter.com/anandvyaas","displayname":"https://twitter.com/anandvyaas","username":"anandvyaas","inresume":"false" },
+            { "name": "LinkedIn","icon":"fa fa-linkedin","url": "https://www.linkedin.com/in/anandvyaas","displayname":"https://www.linkedin.com/in/anandvyaas","username":"anandvyaas","inresume":"true" },
+            { "name": "Instagram","icon":"fa fa-instagram","url": "https://www.instagram.com/anandvyaas","displayname":"https://www.instagram.com/anandvyaas","username":"anandvyaas","inresume":"false" },
+            { "name": "Github","icon":"fa fa-github","url": "https://github.com/anandvyas","displayname":"https://github.com/anandvyas","username":"anandvyas","inresume":"true" },
+            { "name": "StackOverflow","icon":"fa fa-stack-overflow","url": "https://stackoverflow.com/users/8208060/anand-vyas","displayname":"https://stackoverflow.com/users/8208060/anand-vyas","username":"-","inresume":"false" }
+        ],
+        "education": [
+            { 
+                "name": "Master in Computer Application (M.C.A)",
+                "From": "Rajasthan University",
+                "duration":"Oct 2017 - Oct 2019" 
+            },
+            { 
+                "name": "Bachelor's Degree",
+                "From": "Rajasthan University",
+                "duration":"Oct 2017 - Oct 2019" 
+            }
+        ],
+        "certificaiton": [
+            { 
+                "name": "AWS Certified Solutions Architect - Associate",
+                "image":"/images/profile/Solutions-Architect-Associate.png",
+                "url": "#",
+                "license":"Z8KHJR1111441LW8",
+                "valid":"Oct 2017 - Oct 2019" 
+            },
+            { 
+                "name": "AWS Certified Developer - Associate",
+                "image":"/images/profile/Developer-Associate.png",
+                "url": "#",
+                "license":"FBVPWNDCCME1QF99",
+                "valid":"Sept 2017 - Sept 2019" 
+            },
+            { 
+                "name": "AWS Certified SysOps Administrator - Associate",
+                "image":"/images/profile/SysOps-Administrator-Associate.png",
+                "url": "#",
+                "license":"ECPZTLHCKJQ1QMCE",
+                "valid":"Sept 2017 - Sept 2019" 
+            }
+        ],
+        "skills": [
+            { "name": "AWS Cloud Architect", "percentage":"70" },
+            { "name": "VPC, EC2, S3, SNS, SQS, ELB, Auto Scaling, Cloud Front", "percentage":"80" },
+            { "name": "Docker", "percentage":"65" },
+            { "name": "Vagrant", "percentage":"50" },
+            { "name": "Git", "percentage":"80" },
+            { "name": "Jenkins", "percentage":"60" },
+            { "name": "Linux", "percentage":"70" },
+            { "name": "Redis", "percentage":"60" },
+            { "name": "Javascript", "percentage":"70" },
+            { "name": "Node.js", "percentage":"70" },
+            { "name": "Php", "percentage":"80" },
+            { "name": "Drupal", "percentage":"80" },
+            { "name": "MySQL", "percentage":"70" },
+            { "name": "ElasticSearch", "percentage":"60" }
+        ],
+        "languages": [
+            { "name": "English", "percentage":"90" },
+            { "name": "Hindi", "percentage":"100" }
+        ],
+        "profile": {
+            "name" :  "Anand vyas",
+            "fname" :"Anand",
+            "lname":"Vyas",
+            "description-small": "",
+            "description": "Having more than 11+ years of vast professional experience in IT and 2 years AWS experience as an <b>AWS Solution Architect</b>. Working with various technologies like AWS Web Services, Nodejs, Angularjs, PHP, Drupal, Codeigniter, CakePHP, MongoDB, DynamoDB, Redis, Memcache, JSON, API.  As a Solution Architect/ Technical Architect/ Team Lead in various phase of career gained excellent client and team handling ability. Using this skill to communicate directly with the client and perform the best as a team. Also, have involved and contributed a lot in converting the requirements into effective business design. Always been a part of Release Process and Stage Maintenance.",
+            "tags": ["Solution Architect","Cloud Architect","DevOps","Tech Lead"],
+            "contact_number": "(+91) 9660100100",
+            "email": "anandvyas@live.com",
+            "avatar": "/images/profile/avatar.jpg",
+            "hobbies": ["Soccer","Skiing","Running","Golf","Guitar"],
+            "address": "725, Sector 14, Gurugram, Haryana - 122001"
+        },
+        "workexpression":[
+            {
+                "company_name":"Srijan Technologies",
+                "company_address":"Delhi, IN",
+                "company_designation":"Solutions Architect / Technical Architect",
+                "company_duration":"June 2015 - Present",
+                "company_roles":[
+                    "Architect, design and implement solutions with AWS Virtual Private Cloud (VPC), Elastic Compute Cloud (EC2), Elastic Load Balancer (ELB), AutoScalling, RDS, S3, CloudWatch and other AWS products.",
+                    "Ensure success in building and migrating applications, software and services on the AWS platform.",
+                    "Participate in deep architectural discussions to ensure solutions are designed for successful deployment in the cloud.",
+                    "Communicate with the stack holders internally and externally at various level to identify existing IT infra and future need.",
+                    "Involved in knowledge sharing and technical guidance to the team members.",
+                    "Deployment of code and database on staging and production servers.",
+                    "Implementing GIT, CI based workflows in our projects.",
+                    "Participate in the Sprint planning process.",
+                    "Performing hands on development when needed."
+                ]
+            },{
+                "company_name":"Cyberlinks Technologies",
+                "company_address":"Gurugram, IN",
+                "company_designation":"Technical Architect / Team Lead",
+                "company_duration":"June 2014 - June 2015",
+                "company_roles":[
+                    "Leading Teams of 2 - 8 people in successfully delivering projects",
+                    "Mentoring the team members",
+                    "Ensuring the timely and Quality delivery of projects.",
+                    "Working closely with the Project Manager / Business Analyst in understanding requirement and breaking them down.",
+                    "Participate in the Sprint planning process and provide breakdown and effort of tasks.",
+                    "Working closely with a Mobile Team to develop Web Services and APIs",
+                    "Hands on development with the team to deliver web projects",
+                    "Deployment and maintenance of developed Web applications"
+                ]
+            },{
+                "company_name":"Arcgate Technologies",
+                "company_address":"Udaipur, IN",
+                "company_designation":"Associate Technical Architect / Team Lead",
+                "company_duration":"May 2012 - May 2014",
+                "company_roles":[
+                    "Leading Teams of 2 - 6 people in successfully delivering projects",
+                    "Mentoring the team members",
+                    "Ensuring the timely and Quality delivery of projects.",
+                    "Working closely with the Project Manager / Business Analyst in understanding requirement and breaking them down.",
+                    "Participate in the Sprint planning process and provide breakdown and effort of tasks.",
+                    "Working closely with a Mobile Team to develop Web Services and APIs",
+                    "Hands on development with the team to deliver web projects",
+                    "Deployment and maintenance of developed Web applications"
+                ]
+            },{
+                "company_name":"Arcgate Technologies",
+                "company_address":"Udaipur, IN",
+                "company_designation":"Sr. Developer",
+                "company_duration":"May 2008 - May 2012",
+                "company_roles":[
+                    "Developed and maintain PHP/MySQL, Cakephp, Drupal, Wordpress, Nodejs and Javascript based applications.",
+                    "Defining best practices for project support and documentation.",
+                    "Handling application development as well as unit, integration and system testing.",
+                    "Identifying technical & functional requirements / pain areas & mapping the same in line with organizational needs.",
+                    "Designing & developing database objects like tables, views, and procedures.",
+                    "Coding & Review as per Coding guidelines issued by the client.",
+                    "Writing APIs which are used by Mobile Apps or any other platform.",
+                    "Consuming APIs of various third party services."
+                ]
+            },{
+                "company_name":"Rajasthan Patrika",
+                "company_address":"Jaipur, IN",
+                "company_designation":"Developer",
+                "company_duration":"Feb 2007 - May 2008",
+                "company_roles":[
+                    "Deployment and maintenance of Rajasthan Patrika website",
+                    "Deployment and maintenance of news integration support backend tools",
+                    "Compare with other news sites and new features"
+                ]
+            },{
+                "company_name":"Acro Computing India",
+                "company_address":"Hydrabad, IN",
+                "company_designation":"Trainee / Developer",
+                "company_duration":"Jun 2006 - Feb 2007",
+                "company_roles":[
+                    "Trained in PHP, MySQL concepts and its working. Also, got training as a System engineer."
+                ]
+            }
+        ],
+        "projects":[
+            { 
+                "project": "Sealed Air", 
+                "client": "SealedAir", 
+                "role": "Solution Architect/Technical Architect", 
+                "technologies": "AWS API Gateway, Lambda, DynamoDB, Cassandra, IOT, Drupal, Nodejs, Angularjs", 
+                "duration": "Jan 2017 - Present", 
+                "description": " Sealed Air is completely based on IOT devices,  Sealed Air IOT devices send all information to API Gateway and lambda function store all data in dynamoDB in unstructured format. After that some other function filter data and store in cassandra. We get these data from cassandra and display real data on browser with help of angularjs."
+            },{ 
+                "project": "Live Hindusthan", 
+                "client": "Hindusthan Times", 
+                "role": "Solution Architect/Technical Architect", 
+                "technologies": "EC2, S3, Drupal 7, Nodejs, Redis, React, Elasticsearch, Kibana",   
+                "duration": "Feb 2016 - Jan 2017", 
+                "description": "Live Hindusthan is the Hindi language news website with million of traffic. Our responsibility is to manage backend and frontend. Backend built on Drupal with dynamic template management. We also implement Elastic search to better performance. The frontend was built in Nodejs with React."
+            },{ 
+                "project": "Find It", 
+                "client": "GetIT", 
+                "role": "Technical Architect", 
+                "technologies": "Drupal, Mysql, PIM (Product Management System), Redis, Elastic search", 
+                "duration": "June 2015 - Feb 2016", 
+                "description": "FindIt is an e-commerce based application, Our responsibility is to manage PIM (Product management tool), backend in Drupal, front-end in Drupal, Elastic search and Redis server."
+            },{ 
+                "project": "News Nation", 
+                "client": "Newsnation", 
+                "role": "Technical Architect", 
+                "technologies": "Php, MySQL, Slim framework, Redis, Wowza server, shell script", 
+                "duration": "Feb 2015 - June 2015", 
+                "description": "News Nation is a free to air 24-hour national Hindi news television channel owned by News Nation Network Pvt Ltd. And our responsibilities to manage online streaming for all devices (Android,Windows,iOS,Web) through wowza streaming server and also create website and Video CMS."
+            },{ 
+                "project": "Multi TV", 
+                "client": "Cyberlinks", 
+                "role": "Technical Architect", 
+                "technologies": "Php, MySQL, Slim framework, Redis, Wowza server, shell script", 
+                "duration": "June 2014 - Feb 2015", 
+                "description": "MultiTV is an online solution for video streaming. The user can create a collection of its video and stream through MultiTV platform. We used FFMPEG to convert video in different format depends on the user device and user data plan. And also we use WOWZA server to stream video."
+            },{ 
+                "project": "Money Control Terminal", 
+                "client": "Network 18", 
+                "role": "Technical Architect/Sr. Developer", 
+                "technologies": "Php, Javascript, jQuery", 
+                "duration": "Sept 2013 - June 2014", 
+                "description": "Money Control Terminal is a Network 18 project, basically, it provides live information about BSE 30 Live Prices/Quotes, Live BSE Stock/Share Price and Real-Time BSE Stocks. Our responsibility is to authenticate the user and show all data in real time. We use socket programming with Nodejs."
+            },{ 
+                "project": "i>clicker", 
+                "client": "Macmillan Publishers, UK ", 
+                "role": "Technical Architect/Sr. Developer", 
+                "technologies": "Wordpress, MySQL, jQuery, JavaScript, XML, LAMP", 
+                "duration": "June 2013 - Sept 2013", 
+                "description": "i>clicker’s provides an intuitive student response system that focused on formative assessment and pedagogy. All i>clicker response devices are compatible with any brand of interactive whiteboard and any software application, making it a perfect audience response system for the growing number of K-12 customers to corporate training environments and tradeshows. Developed informative website of it."
+            },{ 
+                "project": "Youngbuzz", 
+                "client": "YoungBuzz India Ltd, IN", 
+                "role": "Sr. Developer", 
+                "technologies": "Drupal 6, MySQL, AJAX, JavaScript, LAMP", 
+                "duration": "Aug 2011 - June 2013", 
+                "description": "<b>YoungBuzz​</b>, India’s premier career counseling company, can help you in all the above to choose that perfect career and chart a successful career path for you. Take the On-line Career Counseling Test to know your aptitude, interest and personality and make an informed career choice."
+            },{ 
+                "project": "CriticalPast", 
+                "client": "Critical Past LLC, NY", 
+                "role": "Sr. Developer", 
+                "technologies": "OOPS PHP5 using Cake framework, MySQL, AJAX, JavaScript, XML, LAMP", 
+                "duration": "Feb 2010 - Aug 2011", 
+                "description": "<b>‘CriticalPast.com’</b> is a place where professionals and non-professionals can easily search vast collection of footage or photos and can place an order. Customers can order the full-resolution moving images into their desired format on demand. The still photos are also available for download as JPEG files, or customers may take advantage of the company’s professional photo printing services and have prints delivered right to their door. Among stock footage providers, CriticalPast.com is unique in offering immediate download of any footage or photo image in the collection, for most image formats. If customer prefer, then order can be ship to anywhere in the world."
+            },{ 
+                "project": "GigaCRM", 
+                "client": "GigaOM,CA", 
+                "role": "Developer", 
+                "technologies": "CakePHP 1.1 framework, MySQL 5.0, AJAX, JavaScript, XML, LAMP", 
+                "duration": "May 2008 - Feb 2010", 
+                "description": "‘GigaOM’ company is successfully running various blogging sites like GigaOM, WebWorkerDaily, NewTeeVee, Earth2Tech, TheAppleBlog etc. GigaCRM provides a CRM solution to Gigaomni Media people where they can see the various analytics about the blogs written on these sites like top posts, pageviews, comments, revenue, top posts, top authors etc. They can also analyze the performance of the sales people who sells the advertisements for the sites. The data is gathered through APIs of various sites like Google Analytics, Wordpress, Eventbrite, Zuora etc."
+            },{ 
+                "project": "Rajasthan Patrika", 
+                "client": "Rajasthan Patrika", 
+                "role": "Developer", 
+                "technologies": "Php, MySQL, Memcache", 
+                "duration": "Feb 2007 - May 2008", 
+                "description": "Rajasthan Patrika is an Indian Hindi-language news website with millions of traffic per day. We build our custom backend system to manage news and ticker. We also build whole website in PHP with MySQL and Memcache for caching"
+            }
+        ]
+    }
+}

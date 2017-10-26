@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "header.html" . }}
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation Start-->
+  {{ partial "navigation.html" . }}
+  <!-- Navigation End-->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+    {{ partial "breadcrumb.html" . }}
+        <div class="post">
+            <h1>{{ .Title }}</h1>
+            <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+            {{ .Content }}
+        </div>
+    {{ if and (isset .Site.Params "disqusShortname") (ne .Site.Params.disqusShortname "") }}
+        <h2>Comments</h2>
+        {{ partial "disqus" . }}
+    {{ end }}
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>
