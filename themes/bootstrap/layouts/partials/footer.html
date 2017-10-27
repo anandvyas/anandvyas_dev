@@ -1,7 +1,7 @@
 <footer class="sticky-footer">
     <div class="container">
         <div class="text-center">
-        <small>Copyright © Anand Vyas {{ now.Format "2006"}}</small>
+            <small>Copyright © Anand Vyas {{ now.Format "2006"}}</small>
         </div>
     </div>
 </footer>
@@ -13,6 +13,8 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/popper.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="/js/highlight.min.js"></script>
+<script src="/js/clipboard.min.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="/js/jquery.easing.min.js"></script>
 <!-- Custom scripts for all pages-->
@@ -20,9 +22,8 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108803266-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-108803266-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-108803266-1');
 </script>
