@@ -2,6 +2,8 @@
 title = "What is Cloud Computing ?"
 Categories = ["AWS","Cloud","Cloud Computing"]
 Tags = ["Cloud Computing"]
+keywords = ["AWS","Cloud","Cloud Computing"]
+description = "Cloud computing is the delivery of computing services — servers, storage, databases, networking, software, analytics and more—over the Internet"
 date = "2017-07-03T00:15:00+02:00"
 type = "post"
 more_link = "yes"

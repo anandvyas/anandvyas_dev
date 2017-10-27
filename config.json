@@ -1,5 +1,8 @@
 {
     "baseURL":"http://anandvyas.in/",
+    "defaultExtension":"html",
+    "uglyurls": "false",
+    "canonifyURLs": "true",
     "languageCode":"en-us",
     "taxonomies":{
         "tag":"tags",
@@ -11,6 +14,7 @@
     "title":"Anand vyas",
     "PublishDir": "docs",
     "params": {
+        "disqusShortname":"anandvyas",
         "themeColor": "theme",
         "description": "Technical Architect/ Team Lead",
         "menu": [
