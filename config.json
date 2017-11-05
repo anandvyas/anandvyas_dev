@@ -106,7 +106,10 @@
                 "company_name":"Srijan Technologies",
                 "company_address":"Delhi, IN",
                 "company_designation":"Solutions Architect / Technical Architect",
-                "company_duration":"June 2015 - Present",
+                "company_duration": {
+                    "start" : "June 2015",
+                    "end" : "Present"
+                },
                 "company_roles":[
                     "Architect, design and implement solutions with AWS Virtual Private Cloud (VPC), Elastic Compute Cloud (EC2), Elastic Load Balancer (ELB), AutoScalling, RDS, S3, CloudWatch and other AWS products.",
                     "Ensure success in building and migrating applications, software and services on the AWS platform.",
@@ -122,7 +125,10 @@
                 "company_name":"Cyberlinks Technologies",
                 "company_address":"Gurugram, IN",
                 "company_designation":"Technical Architect / Team Lead",
-                "company_duration":"June 2014 - June 2015",
+                "company_duration":{
+                    "start" : "June 2014",
+                    "end" : "June 2015"
+                },
                 "company_roles":[
                     "Leading Teams of 2 - 8 people in successfully delivering projects",
                     "Mentoring the team members",
@@ -137,7 +143,10 @@
                 "company_name":"Arcgate Technologies",
                 "company_address":"Udaipur, IN",
                 "company_designation":"Associate Technical Architect / Team Lead",
-                "company_duration":"May 2012 - May 2014",
+                "company_duration":{
+                    "start" : "May 2012",
+                    "end" : "May 2014"
+                },
                 "company_roles":[
                     "Leading Teams of 2 - 6 people in successfully delivering projects",
                     "Mentoring the team members",
@@ -152,7 +161,10 @@
                 "company_name":"Arcgate Technologies",
                 "company_address":"Udaipur, IN",
                 "company_designation":"Sr. Developer",
-                "company_duration":"May 2008 - May 2012",
+                "company_duration":{
+                    "start" : "May 2008",
+                    "end" : "May 2012"
+                },
                 "company_roles":[
                     "Developed and maintain PHP/MySQL, Cakephp, Drupal, Wordpress, Nodejs and Javascript based applications.",
                     "Defining best practices for project support and documentation.",
@@ -167,7 +179,10 @@
                 "company_name":"Rajasthan Patrika",
                 "company_address":"Jaipur, IN",
                 "company_designation":"Developer",
-                "company_duration":"Feb 2007 - May 2008",
+                "company_duration":{
+                    "start" : "Feb 2007",
+                    "end" : "May 2008"
+                },
                 "company_roles":[
                     "Deployment and maintenance of Rajasthan Patrika website",
                     "Deployment and maintenance of news integration support backend tools",
@@ -177,7 +192,10 @@
                 "company_name":"Acro Computing India",
                 "company_address":"Hydrabad, IN",
                 "company_designation":"Trainee / Developer",
-                "company_duration":"Jun 2006 - Feb 2007",
+                "company_duration":{
+                    "start" : "Jun 2006",
+                    "end" : "Feb 2007"
+                },
                 "company_roles":[
                     "Trained in PHP, MySQL concepts and its working. Also, got training as a System engineer."
                 ]

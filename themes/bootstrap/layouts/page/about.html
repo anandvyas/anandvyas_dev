@@ -32,6 +32,7 @@
                             <a href="/files/anandvyas-resume-2017.pdf"><span class="fa fa-file fa-fw"></span></a>
                         </p>
                     </div>
+
                     <div class="box">
                         <h2>Work Experience</h2>
                         {{ range .Site.Params.workexpression }}
@@ -39,7 +40,8 @@
                             <div class="col-lg-3">
                                 <div class="where">{{ .company_name}}</div>
                                 <div class="location">{{ .company_address}}</div>
-                                <div class="year">{{ .company_duration}}</div>
+                                <div class="year">{{ .company_duration.start}} - {{ .company_duration.end}}</div>
+                                <div class="totalduration" start="{{ .company_duration.start}}" end="{{ .company_duration.end}}"></div>
                             </div>
                             <div class="col-lg-9">
                                 <div class="profession">{{ .company_designation}}</div>

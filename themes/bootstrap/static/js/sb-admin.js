@@ -57,6 +57,20 @@ function randomString(length) {
   return str;
 }
 
+function dateDiff(start,end) {
+  var a = moment(end).isValid() ? moment(end) : moment();
+  var b = moment(start).isValid() ? moment(start) : moment();
+  
+  var years = a.diff(b, 'year');
+  b.add(years, 'years');
+  
+  var months = a.diff(b, 'months');
+  b.add(months, 'months');
+  var days = a.diff(b, 'days');
+  
+  return years + ' years ' + months + ' months ';
+}
+
 var callback = function () {
   
   $('pre code').each(function (i, block) {
@@ -67,6 +81,13 @@ var callback = function () {
     hljs.highlightBlock(block);
     
     new Clipboard('.btncopy');
+  });
+
+  // About section get Total duration 
+  $('.totalduration').each(function(){
+    var curElement = $(this);
+    var diff = dateDiff(curElement.attr('start'),curElement.attr('end'));
+    curElement.html(diff);
   });
 
   $('#myCarousel').carousel({
