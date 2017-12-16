@@ -67,8 +67,8 @@ function dateDiff(start,end) {
   var months = a.diff(b, 'months');
   b.add(months, 'months');
   var days = a.diff(b, 'days');
-  
-  return years + ' years ' + months + ' months ';
+
+  return '(' + years + ' years ' + months + ' months)';
 }
 
 var callback = function () {

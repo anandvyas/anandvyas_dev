@@ -20,6 +20,24 @@ body {
   background: #ededed;
   overflow-x: hidden;
 }
+
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-color: grey;
+}
+
+table th, table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
 a{
   color:#CC9900;
 }

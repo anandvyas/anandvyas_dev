@@ -176,9 +176,11 @@ EXPERIENCES
   opacity: 0.7;
 }
 .job .totalduration{
-  font-size: 13px;
+  font-size: 12px;
   opacity: 0.7;
+  color: red;
 }
+
 .job .profession{
   font-weight: bold;
 }
