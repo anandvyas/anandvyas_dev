@@ -14,6 +14,7 @@ Cloud computing is the delivery of computing services — servers, storage, data
 
 {{< img src="/images/blog/aws-cloud-computing-defined.jpg" title="aws cloud computing" >}}
 
+
 <!--more-->
 ### <a name="aws-cloud-computing-benefits">Cloud Computing - Benefits</a>
 
@@ -34,7 +35,6 @@ deployment strategies have emerged to help meet specific needs of different user
 - **Software as a Service (SaaS)**: Software-as-a-service (SaaS) is a method for delivering software applications over the Internet, on demand and typically on a subscription basis. With SaaS, cloud providers host and manage the software application and underlying infrastructure and handle any maintenance, like software upgrades and security patching. Users connect to the application over the Internet, usually with a web browser on their phone, tablet or PC.
 
 {{< img src="/images/blog/aws-cloud-computing-difference.png" title="aws cloud computing difference" >}}
-
 
 These are sometimes called the cloud computing stack, because they build on top of one another. 
 
